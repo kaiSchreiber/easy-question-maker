@@ -1,0 +1,20 @@
+object FormImport: TFormImport
+  Left = 295
+  Height = 377
+  Top = 240
+  Width = 544
+  BorderStyle = bsSingle
+  Caption = 'Bild zuschneiden mit linkem/rechtem Mausklick.'
+  ClientHeight = 377
+  ClientWidth = 544
+  OnClose = FormClose
+  LCLVersion = '1.0.6.0'
+  object Zuschnitt: TImage
+    Left = 0
+    Height = 328
+    Top = 0
+    Width = 544
+    OnMouseDown = ZuschnittMouseDown
+    Proportional = True
+  end
+end
